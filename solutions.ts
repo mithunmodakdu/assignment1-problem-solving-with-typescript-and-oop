@@ -11,8 +11,10 @@ function multiplyValue(value: number, multiplier?: number): number{
   }
 }
 
+type TInput = string | number | boolean;
+type TOutput = string | number;
 
-function processInput(input: string | number | boolean): string | number{
+function processInput(input: TInput ): TOutput {
   
   if(typeof input === "string"){
     return input.trim().toLowerCase();
@@ -24,6 +26,17 @@ function processInput(input: string | number | boolean): string | number{
     return input === true? "Active" : "Inactive"
   }
 }
+
+
+function formatCoordinate(coordinates: readonly[number, number, string]): string {
+  const [latitude, longitude, locationName] = coordinates;
+  return `Location: ${locationName} (${latitude}, ${longitude})`
+}
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  return arrays.flat();
+}
+
 
 
 
