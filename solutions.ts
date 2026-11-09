@@ -2,6 +2,7 @@ function multiplyValue(value: number, multiplier?: number): number {
   return value * (multiplier ?? 2);
 }
 
+
 type TInput = string | number | boolean;
 type TOutput = string | number;
 
@@ -89,6 +90,8 @@ function validateAgeAsync(age: number): Promise<string> {
   });
 
 };
+
+
 
 
 
