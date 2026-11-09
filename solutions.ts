@@ -1,11 +1,5 @@
 function multiplyValue(value: number, multiplier?: number): number {
-  if (multiplier) {
-    return value * multiplier;
-  } else if (multiplier === 0) {
-    return value * 0;
-  } else {
-    return value * 2;
-  }
+  return value * (multiplier ?? 2);
 }
 
 type TInput = string | number | boolean;
@@ -21,6 +15,7 @@ function processInput(input: TInput): TOutput {
   }
 }
 
+
 function formatCoordinate(
   coordinates: readonly [number, number, string],
 ): string {
@@ -28,9 +23,11 @@ function formatCoordinate(
   return `Location: ${locationName} (${latitude}, ${longitude})`;
 }
 
+
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   return arrays.flat();
 }
+
 
 interface Course {
   title: string;
@@ -38,17 +35,19 @@ interface Course {
   isPublished: boolean;
 }
 
-function getPopularCourses(courses: Course[], minStudents: number) {
+function getPopularCourses(courses: Course[], minStudents: number): Course[] {
   const result = courses.filter(
     (course) => course.isPublished === true && course.students >= minStudents,
   );
   return result;
 }
 
+
 function pluckValues<T, K extends keyof T>(items: T[], key: K): T[K][] {
   const result = items.map((item) => item[key]);
   return result;
 }
+
 
 class Employee {
   protected name: string;
@@ -59,7 +58,7 @@ class Employee {
     this.baseSalary = baseSalary;
   }
 
-  getDetails() {
+  getDetails(): string {
     return `Employee: ${this.name}, Base Salary: ${this.baseSalary}`;
   }
 }
@@ -72,12 +71,13 @@ class Manager extends Employee {
     this.department = department;
   }
 
-  getRoleInfo() {
+  getRoleInfo(): string {
     return `Manager of ${this.department}: ${this.name}`;
   }
 }
 
-async function validateAgeAsync(age: number): Promise<string> {
+
+function validateAgeAsync(age: number): Promise<string> {
   return new Promise((resolve, reject) => {
     if (age >= 18) {
       setTimeout(() => {
@@ -89,5 +89,7 @@ async function validateAgeAsync(age: number): Promise<string> {
   });
 
 };
+
+
 
 
