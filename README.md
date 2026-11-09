@@ -5,7 +5,7 @@
 
 This repository contains eight TypeScript problem solutions that reflect my understanding of core TypeScript concepts. The problems focus on basic types, optional, rest parameters, readonly tuples, interfaces, type narrowing, generics, Promises, and Object-Oriented Programming.
 
-## Core TypeScript concepts used in Problems solving
+### Core TypeScript concepts used in Problems solving
 
 1. **Optional Parameters and Nullish Coalescing** : I created multiplyValue function using `optional parameters(?)` and default values through `Nullish Coalescing (??)`. Nullish Coalescing provides a default value only when the value is null or undefined. It correctly handles 0.
 2. **Union Types and Type Narrowing** : For processInput function, I created union types with type alias for both parameters and return output. I handled multiple data types using those `union types` and `typeof` for type narrowing.
@@ -18,6 +18,7 @@ This repository contains eight TypeScript problem solutions that reflect my unde
 
 
 ## Links to blog files
+[Blog on Type Alias vs Interface](URL)
 
 
 
