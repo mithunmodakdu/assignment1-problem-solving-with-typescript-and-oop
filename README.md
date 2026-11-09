@@ -18,7 +18,7 @@ This repository contains eight TypeScript problem solutions that reflect my unde
 
 
 ## Links to blog files
-[Blog on Type Alias vs Interface](URL)
+[Blog on Type Alias vs Interface](https://github.com/mithunmodakdu/assignment1-problem-solving-with-typescript-and-oop/blob/main/type-vs-interface.md)
 
 
 
