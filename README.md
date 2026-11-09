@@ -18,9 +18,9 @@ This repository contains eight TypeScript problem solutions that reflect my unde
 
 
 ## Links to blog files
-[Blog on Type Alias vs Interface](https://github.com/mithunmodakdu/assignment1-problem-solving-with-typescript-and-oop/blob/main/type-vs-interface.md);
+[Blog on Type Alias vs Interface](https://github.com/mithunmodakdu/assignment1-problem-solving-with-typescript-and-oop/blob/main/type-vs-interface.md)
 
-[Blog on Type Narrowing](https://github.com/mithunmodakdu/assignment1-problem-solving-with-typescript-and-oop/blob/main/type-narrowing.md);
+[Blog on Type Narrowing](https://github.com/mithunmodakdu/assignment1-problem-solving-with-typescript-and-oop/blob/main/type-narrowing.md)
 
 
 
